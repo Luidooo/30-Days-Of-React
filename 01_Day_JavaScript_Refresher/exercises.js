@@ -72,10 +72,117 @@ if(age >= 16){
 
 //Loops
 
-const numbers
-for ( number of numbers){
-  //code
+
+
+
+
+const person = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  city: 'Helsinki',
+  skills: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Node',
+    'MongoDB',
+    'Python',
+    'D3.js',
+  ],
+  getFullName: function () {
+    return `${this.firstName}${this.lastName}`
+  },
+  'phone number': '+999618010', isMarried: true, 
+  } 
+console.log(person)
+  
+// accessing values using .
+console.log(person.firstName)
+console.log(person.lastName)
+console.log(person.age)
+console.log(person.location)
+
+// value can be accessed using square bracket and key name
+console.log(person['firstName'])
+console.log(person['lastName'])
+console.log(person['age'])
+console.log(person['age'])
+console.log(person['location'])
+
+// for instance to access the phone number we only use the square bracket method
+console.log(person['phone number'])
+
+console.log(person.getFullName())
+
+
+person.nationality = 'Ethiopian'
+person.skills.push('ai baby')
+
+person.getPersonInfo = function () {
+  let noLastlLSkills = this.skills.slice(0, this.skiils.legth -1 ).join('->')
+  let lastSkiill = this.skiils.slice(this.skiils.length - 1)[0]
+
 }
+
+const person2 = {
+  firstName: 'Asabeneh',
+  age: 250,
+  country: 'Finland',
+  city: 'Helsinki',
+  skills: ['HTML', 'CSS', 'JS'],
+  title: 'teacher',
+  address: {
+    street: 'Heitamienkatu 16',
+    pobox: 2002,
+    city: 'Helsinki',
+  },
+  getPersonInfo: function () {
+    return `I am ${this.firstName} and I live in ${this.city}, ${this.country}. I am ${this.age}.`
+  },
+}
+//copia sem mudar
+const copyPerson = Object.assign({}, person2)
+
+//keys, pega as "keys" do objeto
+const keys = Object.keys(copyPerson)
+//const adress = Object.keys(copyPerson.addres)
+
+//values, consegue-se os valores de um obejto
+const values = Object.values(copyPerson)
+console.log(values)
+
+
+//entries to get keys and values in a array
+const entries = Object.entries(copyPerson)
+console.log(entries) 
+const tem = copyPerson.hasOwnProperty('name')
+//console.log(tem)
+
+console.log(copyPerson.hasOwnProperty('name'))
+console.log(copyPerson.hasOwnProperty('score'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
